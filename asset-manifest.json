@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Multi-Select/static/css/main.e5e5bf6b.css",
+    "main.js": "/React-Multi-Select/static/js/main.13c7a8e2.js",
+    "index.html": "/React-Multi-Select/index.html",
+    "main.e5e5bf6b.css.map": "/React-Multi-Select/static/css/main.e5e5bf6b.css.map",
+    "main.13c7a8e2.js.map": "/React-Multi-Select/static/js/main.13c7a8e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5e5bf6b.css",
+    "static/js/main.13c7a8e2.js"
+  ]
+}
