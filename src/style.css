@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* written code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utils */
+.color-purple{
+	color: purple;
+}
+.color-purple:hover{
+	background-color: rgba(128, 0, 128, 0.2);
+}
+
+.color-red{
+	color: red;
+}
+.color-red:hover{
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.color-orange{
+	color: orange;
+}
+.color-orange:hover{
+	background-color: rgba(255, 166, 0, 0.2);
+}
+
+.color-yellow{
+	color: rgb(235, 235, 70);
+}
+
+.color-yellow:hover{
+	background-color: rgba(255, 255, 0, 0.2);
+}
+
+.color-green{
+	color: green;
+}
+.color-green:hover{
+	background-color: rgba(0, 128, 0, 0.2);
+}
+
+.color-slate{
+	color: rgb(29, 27, 27);
+}
+.color-slate:hover{
+	background-color: rgba(29, 27, 27, 0.2);
+}
+
+.color-silver{
+	color: silver;
+}
+.color-silver:hover{
+	background-color: rgba(192, 192, 192, 0.2);
+}
+
+.color-ocean{
+	color: cyan;
+}
+.color-ocean:hover{
+	background-color: rgba(0, 255, 255, 0.2);
+}
+
+.color-forest{
+	color: forestgreen;
+}
+.color-forest:hover{
+	background-color: rgba(34, 139, 34, 0.2);
+}
+
+
+#root{
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+
+.form-wrapper{
+	font-family: 'Open Sans', sans-serif;
+	width: 500px;
+	position: relative;
+	z-index: 0;
+}
+
+#form-input{
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+#form-input:focus{
+	outline-color: #5f75ce;
+}
+
+.dropdownMenu{
+	position: absolute;
+	z-index: 1;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	width: 100%;
+	top: 50px;
+	border-radius: 6px;
+	padding: 10px 0;
+}
+.dropdownMenu.hidden{
+	display: none;
+}
+.dropdownMenu li{
+	padding: 15px;
+}
+
+/* expand more arrow  */
+.icon-wrapper{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+}
+#expand-menu{
+	padding: 0 5px;
+	z-index: 2;
+	cursor: pointer;
+	color: gray;
+}
+#expand-menu.active{
+	transform: rotate(180deg);
+}
+#expand-menu:hover{
+	color: black;
+}
+
+#close-menu{
+	padding: 0 5px;
+	cursor: pointer;
+	font-size: 20px;
+	color: gray;
+	border-right: 1px solid rgba(128, 128, 128, 0.538);
+}
+#close-menu:hover{
+	color: black;
+}
